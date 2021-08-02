@@ -162,11 +162,11 @@ const Banner = ({
   // Once we have the height, we apply the height to the spacer and switch the banner to position: absolute
   // We need this because we need to move the content below as if banner's height was being animated
   // However we can't animated banner's height directly as it'll also resize the content inside
-  const height = Animated.multiply(position, layout.height);
+  const height = Animated.multiply(position, 65);
 
   const translateY = Animated.multiply(
     Animated.add(position, -1),
-    layout.height
+    65
   );
   return (
     <Surface
